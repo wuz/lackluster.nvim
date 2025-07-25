@@ -30,6 +30,13 @@ return function(theme)
             spec.co("MiniStatuslineModeReplace", color.black, color.gray9, { bold = true }),
             spec.co("MiniStatuslineModeOther", color.gray9, color.lack, { bold = true }),
 
+            -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-hipatterns.md
+            -- highlight patterns
+            spec.co("MiniHipatternsFixme", color.red, color.lack, { bold = true }),
+            spec.co("MiniHipatternsHack", color.orange, color.lack, { bold = true }),
+            spec.co("MiniHipatternsTodo", color.yellow, color.lack, { bold = true }),
+            spec.co("MiniHipatternsNote", color.blue, color.lack, { bold = true }),
+
             -- Other statusline highlights
             spec.co("MiniStatuslineInactive", color.gray4, color.gray1, { bold = false }),
             spec.co("MiniStatuslineFilename", color.gray7, color_special.statusline),
