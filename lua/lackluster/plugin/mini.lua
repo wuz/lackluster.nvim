@@ -32,10 +32,10 @@ return function(theme)
 
             -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-hipatterns.md
             -- highlight patterns
-            spec.co("MiniHipatternsFixme", color.red, color.lack, { bold = true }),
-            spec.co("MiniHipatternsHack", color.orange, color.lack, { bold = true }),
-            spec.co("MiniHipatternsTodo", color.yellow, color.lack, { bold = true }),
-            spec.co("MiniHipatternsNote", color.blue, color.lack, { bold = true }),
+            spec.co("MiniHipatternsFixme", color.gray1, color.red, { bold = true }),
+            spec.co("MiniHipatternsHack", color.gray1, color.orange, { bold = true }),
+            spec.co("MiniHipatternsTodo", color.gray1, color.yellow, { bold = true }),
+            spec.co("MiniHipatternsNote", color.gray1, color.blue, { bold = true }),
 
             -- Other statusline highlights
             spec.co("MiniStatuslineInactive", color.gray4, color.gray1, { bold = false }),
@@ -59,6 +59,9 @@ return function(theme)
 
             -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md
             spec.co("MiniSurround", color.gray1, color.lack),
+
+            -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-cursorword.md
+            spec.co("MiniCursorword", color.orange, color.lack),
         },
     }
 end

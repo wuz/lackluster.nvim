@@ -375,6 +375,7 @@ local highlight = function(theme, color)
         -- TODO: decide if each individual mini plugin should be opt in
         -- can wait until all are supported before deciding
         require("lackluster.plugin.mini")(theme),
+        require("lackluster.plugin.diffview")(theme),
     }
 end
 
